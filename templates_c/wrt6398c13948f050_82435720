@@ -1,0 +1,86 @@
+<?php
+/* Smarty version 4.2.1, created on 2022-12-13 18:15:21
+  from 'C:\laragon\www\TP4\templates\register.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.2.1',
+  'unifunc' => 'content_6398c13948c162_04136096',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '6c9f06a4dc90257b7d884ed9d589def21cf566fc' => 
+    array (
+      0 => 'C:\\laragon\\www\\TP4\\templates\\register.tpl',
+      1 => 1670955114,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6398c13948c162_04136096 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10515828926398c13948a337_44702560', 'title');
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_448920976398c13948b774_25432515', 'body');
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'layout.tpl');
+}
+/* {block 'title'} */
+class Block_10515828926398c13948a337_44702560 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'title' => 
+  array (
+    0 => 'Block_10515828926398c13948a337_44702560',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+Register<?php
+}
+}
+/* {/block 'title'} */
+/* {block 'body'} */
+class Block_448920976398c13948b774_25432515 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'body' => 
+  array (
+    0 => 'Block_448920976398c13948b774_25432515',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+<h1>Register</h1>
+<div id='main'>
+<body>
+    <form action="/register.html" method="post">
+       <p>Nom</p>
+       <input type="text" id="name" name="name" required
+              minlength="1" maxlength="100" size="15">
+       <p>Email</p>
+       <input type="email" id="email" name="email" required
+              minlength="1" maxlength="100" size="15">
+       <p>Mot de passe</p>
+       <input type="password" id="mdp" name="mdp" required
+              minlength="1" maxlength="100" size="15">
+       <br>
+       <br>
+       <input type="submit" name="submit">
+    </form>
+</body>
+</div>
+<?php
+}
+}
+/* {/block 'body'} */
+}

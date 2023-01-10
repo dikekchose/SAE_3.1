@@ -1,0 +1,81 @@
+<?php
+/* Smarty version 4.2.1, created on 2022-12-14 14:50:44
+  from 'C:\laragon\www\TP4\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.2.1',
+  'unifunc' => 'content_6399e2c464c153_45820630',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2bda975ce403ed9a760f9e5b0d9a2f81a5001efc' => 
+    array (
+      0 => 'C:\\laragon\\www\\TP4\\templates\\index.tpl',
+      1 => 1671029442,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6399e2c464c153_45820630 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4043621986399e2c463c507_88468293', 'title');
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3890848066399e2c463e587_18525763', 'body');
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'layout.tpl');
+}
+/* {block 'title'} */
+class Block_4043621986399e2c463c507_88468293 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'title' => 
+  array (
+    0 => 'Block_4043621986399e2c463c507_88468293',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+Accueil<?php
+}
+}
+/* {/block 'title'} */
+/* {block 'body'} */
+class Block_3890848066399e2c463e587_18525763 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'body' => 
+  array (
+    0 => 'Block_3890848066399e2c463e587_18525763',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+<div id='main'>
+<h1>Home</h1>
+<p><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+    <?php if ($_smarty_tpl->tpl_vars['connection']->value == true) {?>
+        <a href="/TP4/profil">Voir mon profil</a>
+        <a>|</a>
+        <a href="/TP4/">Se déconnecter</a>
+    <?php } else { ?>
+        <a href="/TP4/register">Se connecter</a>
+        <p>|</p>
+        <a href="/TP4/">S'inscrire</a>
+    <?php }?>
+</div>
+<?php
+}
+}
+/* {/block 'body'} */
+}
